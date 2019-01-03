@@ -20,6 +20,7 @@ const Home = () => {
                 <div className={styles.raw}>                    
                     <VideoList 
                         type="card"
+                        title={true}
                         loadmore={true}
                         start={0}
                         amount={6}

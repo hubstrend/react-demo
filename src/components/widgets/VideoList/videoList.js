@@ -87,15 +87,21 @@ class VideoList extends Component {
 
     }
 
+    renderTitle = () => {
+        return this.props.title ? 
+            <div className={styles.secTitle}>
+                <h3 className={styles.mainTitle}>Lorem Ipsum</h3>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h5>
+            </div>
+        : null;
+    }
 
 
     render() {
         return(
             <div>
-                <div className={styles.secTitle}>
-                    <h3 className={styles.mainTitle}>Title</h3>
-                    <h5>Lorem ipsum lor sumet</h5>
-                </div>
+                {this.renderTitle()}
+                
 
                 <div className={styles.clearfix}></div>
                 
