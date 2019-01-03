@@ -1,0 +1,1 @@
+Note: After running 'npm start', run command 'npm run json-serve'  in another terminal to fetch json data.

@@ -1,0 +1,180 @@
+{
+    "hero":[
+        {
+            "id":1,
+            "image":"",
+            "title":"LET'S MAKE SIMPLE",
+            "caption":"Graphic Content Sulotions. Shop & Get Animated."
+        },
+        {
+            "id":2,
+            "image":"hero-2.jpg",
+            "title":"Need Animation With Low Badget?",
+            "caption":"Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id":3,
+            "image":"hero-3.jpg",
+            "title":"Animate Your Ideas",
+            "caption":"Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id":4,
+            "image":"hero-4.jpg",
+            "title":"Your Brand Derserves a Stunning Animation",
+            "caption":"Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id":5,
+            "image":"hero-5.jpg",
+            "title":"Add a Spirit in Your Brand - Animate it!",
+            "caption":"Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id":6,
+            "image":"hero-6.jpg",
+            "title":"Make Your Ideas Perfect",
+            "caption":"Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id":7,
+            "image":"hero-1.jpg",
+            "title":"Need an Awesome Animation?",
+            "caption":"Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit."
+        }
+    ],
+    "videos":[
+        {
+            "id":1,
+            "category":"Birthday",
+            "image":"1.jpeg",
+            "title":"Birthday Vidoes",
+            "caption":"Birthday dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "price":"$25.00",
+            "url":"qelHgzRFC0k",            
+            "date":"11/01/2018",
+            "tags":[""]            
+        },
+        {
+            "id":2,
+            "category":"Seasons",
+            "image":"2.jpeg",
+            "title":"Christmas Season",
+            "caption":"Christmas adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "price":"$35.00",
+            "url":"fnCsRnQWqxA",            
+            "date":"10/01/2018",
+            "tags":[""]
+        },
+        {
+            "id":3,
+            "category":"Wedding",
+            "image":"3.jpeg",
+            "title":"Wedding Videos",
+            "caption":"Wedding consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "price":"$20.00",
+            "url":"3hgrw7QQpnE",            
+            "date":"09/01/2018",
+            "tags":[""]
+        },
+        {
+          "id":4,
+          "category":"Seasons",
+          "image":"4.jpeg",
+          "title":"Valentines Seasons",
+          "caption":"Valentines day dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price":"$50.00",
+          "url":"IQovoot_ZUM",            
+          "date":"07/01/2018",
+          "tags":[""]
+      },
+      {
+          "id":5,
+          "category":"Debuj",
+          "image":"5.jpeg",
+          "title":"Debuh Vidoes",
+          "caption":"Debuh adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price":"$15.00",
+          "url":"ZV58-VIcBLA",            
+          "date":"08/01/2018",
+          "tags":[""]
+      },
+      {
+          "id":6,
+          "category":"Animation",
+          "image":"6.jpeg",
+          "title":"Animation Videos",
+          "caption":"Animation consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price":"$30.00",
+          "url":"qsxoUPFPKXk",            
+          "date":"05/01/2018",
+          "tags":[""]
+      },
+      {
+        "id":7,
+        "category":"Birthday",
+        "image":"1.jpeg",
+        "title":"Birthday Vidoes",
+        "caption":"Birthday dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price":"$25.00",
+        "url":"yhGoFCOOeak  ",            
+        "date":"11/01/2018",
+        "tags":[""]            
+    },
+    {
+        "id":8,
+        "category":"Seasons",
+        "image":"2.jpeg",
+        "title":"Christmas Season",
+        "caption":"Christmas adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price":"$35.00",
+        "url":"FCH_alhraZE",            
+        "date":"10/01/2018",
+        "tags":[""]
+    },
+    {
+        "id":9,
+        "category":"Wedding",
+        "image":"3.jpeg",
+        "title":"Wedding Videos",
+        "caption":"Wedding consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price":"$20.00",
+        "url":"GW_fdXHOWp4",            
+        "date":"09/01/2018",
+        "tags":[""]
+    },
+    {
+      "id":10,
+      "category":"Seasons",
+      "image":"4.jpeg",
+      "title":"Valentines Seasons",
+      "caption":"Valentines day dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price":"$50.00",
+      "url":"cPWPAjYb5eI",            
+      "date":"07/01/2018",
+      "tags":[""]
+    },
+    {
+        "id":11,
+        "category":"Debuj",
+        "image":"5.jpeg",
+        "title":"Debuh Vidoes",
+        "caption":"Debuh adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price":"$15.00",
+        "url":"c9DrryMw248",            
+        "date":"08/01/2018",
+        "tags":[""]
+    },
+    {
+        "id":12,
+        "category":"Animation",
+        "image":"6.jpeg",
+        "title":"Animation Videos",
+        "caption":"Animation consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price":"$30.00",
+        "url":"Tx6NoROBVks",            
+        "date":"05/01/2018",
+        "tags":[""]
+    }
+    ]
+}
