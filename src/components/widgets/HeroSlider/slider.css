@@ -1,0 +1,44 @@
+
+.hero_item {
+    position: relative;
+}
+
+.hero_item a {
+    position: absolute;
+    width:100%;
+    top:25%;
+    text-decoration: none;
+    right: 0px;
+}
+
+.hero_image {
+    height: 330px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.hero_title {
+    color:#ffffff;
+    top:0px;
+    width:100%;
+    /* padding:20px; */
+    font-weight: 300;
+    font-size:28px;
+    box-sizing: border-box;
+    text-align: center;
+    margin:0;
+}
+
+.hero_caption {
+    color:#ffffff;
+    top:0px;
+    width:100%;
+    /* padding:20px; */
+    font-weight: 100;
+    font-size:20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+h1 {
+    margin:0;
+}
