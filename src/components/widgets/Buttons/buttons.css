@@ -1,11 +1,12 @@
 
-.blue_btn {
-    text-align: center;
+:local(.blue_btn) {
     background: #f7941d;
-    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 20px;
     font-weight: 500;
-    color: #eeeeee;
-    padding:9px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 20px
 }
+

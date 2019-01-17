@@ -1,8 +1,7 @@
 import React from 'react';
+
 import styles from './footer.css';
 import { Link } from 'react-router-dom';
-
-
 import { CURRENT_YEAR } from '../../config';
 
 const Footer = () => {
@@ -17,6 +16,5 @@ const Footer = () => {
         </div>        
     )
 }
-
 
 export default Footer;

@@ -1,9 +1,9 @@
 
-.hero_item {
+:local(.hero_item) {
     position: relative;
 }
 
-.hero_item a {
+:local(.hero_item a) {
     position: absolute;
     width:100%;
     top:25%;
@@ -11,13 +11,13 @@
     right: 0px;
 }
 
-.hero_image {
+:local(.hero_image) {
     height: 330px;
     background-size: cover !important;
     background-repeat: no-repeat !important;
 }
 
-.hero_title {
+:local(.hero_title) {
     color:#ffffff;
     top:0px;
     width:100%;
@@ -29,7 +29,7 @@
     margin:0;
 }
 
-.hero_caption {
+:local(.hero_caption) {
     color:#ffffff;
     top:0px;
     width:100%;
@@ -39,6 +39,6 @@
     box-sizing: border-box;
     text-align: center;
 }
-h1 {
+:local(h1) {
     margin:0;
 }
