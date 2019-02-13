@@ -1,15 +1,27 @@
 
-const initState = {}
+// const initState = {}
 
-const videosReducer = (state = initState,action) => {
+// const videosReducer = (state = initState,action) => {
 
-    switch(action.type) {
+//     switch(action.type) {
+//         case 'GET_VIDEOS_ALL':
+//             return {...state,list:action.payload}
+//         default:
+//             return state
+//     }
+
+// }
+
+// export default videosReducer;
+
+
+const videos = (state = {}, action) => {
+    switch (action.type) {
         case 'GET_VIDEOS_ALL':
-            return {...state,list:action.payload}
+            return {...state, videos: action.payload};
         default:
             return state
     }
+};
 
-}
-
-export default videosReducer;
+export default videos;

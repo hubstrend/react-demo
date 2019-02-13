@@ -22,12 +22,6 @@ const SideNavItems = () => {
             icon:'file-text-o',
             text:'Contact',
             link:'/contact'
-        },
-        {
-            type: "option",
-            icon:'play',
-            text:'Videos',
-            link:'/videos'
         }
     ]
 
@@ -35,9 +29,9 @@ const SideNavItems = () => {
         return items.map( (item,i) =>{
             return(
                 <div key={i} className={item.type}>
-                    <Link href={item.link}>
-                        <FontAwesome name={item.icon}/>
-                        {item.text}
+                    <FontAwesome name={item.icon}/>
+                    <Link href={item.link}>                        
+                        <a>{item.text}</a>
                     </Link>
                 </div>
             )
@@ -47,7 +41,7 @@ const SideNavItems = () => {
     return (
         <div>
             {/* Need to fix */}
-            {/* {showItems()} */}
+            {showItems()}
 
             <style jsx>{`
                  .option {

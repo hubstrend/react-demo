@@ -5,23 +5,25 @@ import App, {Container} from "next/app";
 import withRedux from "next-redux-wrapper";
 
 import Layout from '../hoc/layout';
-// import rootReducer from '../reducers';
+import videoListAll from '../actions';
+import rootReducer from '../reducers';
+import Videos from '../reducers/videosReducer';
  
 
 // const reducers = createStore(rootReducer);
 
-const videos = (state = {}, action) => {
-    switch (action.type) {
-        case 'GET_VIDEOS_ALL':
-            return {...state, videos: action.payload};
-        default:
-            return state
-    }
-};
+// const videos = (state = {}, action) => {
+//     switch (action.type) {
+//         case 'GET_VIDEOS_ALL':
+//             return {...state, videos: action.payload};
+//         default:
+//             return state
+//     }
+// };
  
 
 const makeStore = (initialState, options) => {
-    return createStore(videos, initialState);
+    return createStore(Videos, initialState);
 };
 
 
@@ -30,7 +32,7 @@ class MyApp extends App {
     static async getInitialProps({Component, ctx}) {
  
         // we can dispatch from here too
-        ctx.store.dispatch({type: 'GET_VIDEOS_ALL', payload: 'videos'});
+        // ctx.store.dispatch({type: 'GET_VIDEOS_ALL', payload: 'videos'});
  
         const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
  

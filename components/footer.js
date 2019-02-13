@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { CURRENT_YEAR } from '../config';
+
+const CURRENT_YEAR = (new Date()).getFullYear()
 
 const Footer = () => {
     return (
