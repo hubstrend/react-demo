@@ -1,15 +1,13 @@
 {
-  "name": "abstrak-next",
+  "name": "next-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev-serve": "json-server --watch db.json --port 3005",
+    "json-serve": "json-server --watch db.json --port 3005",
     "dev": "next",
-    "build": "next build",
     "start": "next start",
-    "export": "next-export",
-    "deploy": "cd out && now --public"
+    "build": "next build"
   },
   "keywords": [],
   "author": "",
@@ -17,13 +15,12 @@
   "dependencies": {
     "axios": "^0.18.0",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^7.0.2",
-    "next-redux-wrapper": "^3.0.0-alpha.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "next": "^8.0.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
     "react-fontawesome": "^1.6.1",
-    "react-redux": "^6.0.0",
     "react-simple-sidenav": "^1.0.1",
-    "redux": "^4.0.1"
+    "react-slick": "^0.23.2",
+    "react-transition-group": "^2.5.3"
   }
 }

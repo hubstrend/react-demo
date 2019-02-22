@@ -19,7 +19,7 @@ const SideNavItems = () => {
         },
         {
             type: "option",
-            icon:'file-text-o',
+            icon:'phone',
             text:'Contact',
             link:'/contact'
         }
@@ -40,7 +40,6 @@ const SideNavItems = () => {
 
     return (
         <div>
-            {/* Need to fix */}
             {showItems()}
 
             <style jsx>{`

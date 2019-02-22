@@ -2,8 +2,8 @@
     "hero":[
         {
             "id":1,
-            "image":"",
-            "title":"LETS MAKE SIMPLE",
+            "image":"hero-1.jpg",
+            "title":"LETS MAKE IT SIMPLE",
             "caption":"Graphic Content Sulotions. Shop & Get Animated."
         },
         {
@@ -44,63 +44,8 @@
         }
     ],
     "videos":[
-        {
-            "id":1,
-            "category":"Seasons",
-            "image":"1.jpeg",
-            "title":"Thanksgiving_Turkey",
-            "caption":"Triple M dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "price":"$100",
-            "url":"qVtBq2aTtMk",            
-            "date":"11/01/2018",
-            "tags":[""]            
-        },
-        {
-            "id":2,
-            "category":"Seasons",
-            "image":"2.jpeg",
-            "title":"Rosh Hashana_Honey",
-            "caption":"Rosh Hashana Honey adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "price":"$100",
-            "url":"K01WZYTS3AI",            
-            "date":"10/01/2018",
-            "tags":[""]
-        },
-        {
-            "id":3,
-            "category":"Seasons",
-            "image":"3.jpeg",
-            "title":"Nelson Mandela_Tribute",
-            "caption":"Nelson Mandela_Tribute consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "price":"$100",
-            "url":"kKELo98Sujo",            
-            "date":"09/01/2018",
-            "tags":[""]
-        },
-        {
-          "id":4,
-          "category":"Seasons",
-          "image":"4.jpeg",
-          "title":"4th of July_Baseball",
-          "caption":"4th of July_Baseball day dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "price":"$100",
-          "url":"x-OLViLsjqc",            
-          "date":"07/01/2018",
-          "tags":[""]
-      },
       {
-          "id":5,
-          "category":"Seasons",
-          "image":"5.jpeg",
-          "title":"Ramadan_Lamps",
-          "caption":"Ramadan_Lamps adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "price":"$100",
-          "url":"74NirF8E7Zg",            
-          "date":"08/01/2018",
-          "tags":[""]
-      },
-      {
-          "id":6,
+          "id":1,
           "category":"Branding",
           "image":"6.jpeg",
           "title":"Triple M",
@@ -111,7 +56,7 @@
           "tags":[""]
       },
       {
-        "id":7,
+        "id":2,
         "category":"Branding",
         "image":"1.jpeg",
         "title":"Expert Option",
@@ -122,7 +67,7 @@
         "tags":[""]            
     },
     {
-        "id":8,
+        "id":3,
         "category":"Branding",
         "image":"2.jpeg",
         "title":"Artech",
@@ -133,7 +78,7 @@
         "tags":[""]
     },
     {
-        "id":9,
+        "id":4,
         "category":"Branding",
         "image":"3.jpeg",
         "title":"Big Smoke Burger",
@@ -144,7 +89,7 @@
         "tags":[""]
     },
     {
-      "id":10,
+      "id":5,
       "category":"Branding",
       "image":"4.jpeg",
       "title":"Cactus Club Cafe",
@@ -154,6 +99,61 @@
       "date":"07/01/2018",
       "tags":[""]
     },
+    {
+        "id":6,
+        "category":"Seasons",
+        "image":"1.jpeg",
+        "title":"Thanksgiving_Turkey",
+        "caption":"Triple M dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price":"$100",
+        "url":"qVtBq2aTtMk",            
+        "date":"11/01/2018",
+        "tags":[""]            
+    },
+    {
+        "id":7,
+        "category":"Seasons",
+        "image":"2.jpeg",
+        "title":"Rosh Hashana_Honey",
+        "caption":"Rosh Hashana Honey adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price":"$100",
+        "url":"K01WZYTS3AI",            
+        "date":"10/01/2018",
+        "tags":[""]
+    },
+    {
+        "id":8,
+        "category":"Seasons",
+        "image":"3.jpeg",
+        "title":"Nelson Mandela_Tribute",
+        "caption":"Nelson Mandela_Tribute consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price":"$100",
+        "url":"kKELo98Sujo",            
+        "date":"09/01/2018",
+        "tags":[""]
+    },
+    {
+      "id":9,
+      "category":"Seasons",
+      "image":"4.jpeg",
+      "title":"4th of July_Baseball",
+      "caption":"4th of July_Baseball day dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price":"$100",
+      "url":"x-OLViLsjqc",            
+      "date":"07/01/2018",
+      "tags":[""]
+  },
+  {
+      "id":10,
+      "category":"Seasons",
+      "image":"5.jpeg",
+      "title":"Ramadan_Lamps",
+      "caption":"Ramadan_Lamps adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price":"$100",
+      "url":"74NirF8E7Zg",            
+      "date":"08/01/2018",
+      "tags":[""]
+  },
     {
         "id":11,
         "category":"Ads",
@@ -307,6 +307,17 @@
         "url":"y16-Qywx3aU",            
         "date":"08/01/2018",
         "tags":[""]
-    }    
+    },
+    {
+        "id":25,
+        "category":"Event",
+        "image":"5.jpeg",
+        "title":"Birthday_Greetings",
+        "caption":"Birthday greetings adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price":"$100",
+        "url":"AOeh4dEeOAE",            
+        "date":"08/01/2018",
+        "tags":[""]
+    }
     ]
 }

@@ -1,28 +1,27 @@
-import React, {Component} from "react";
-import {connect} from "react-redux";
-import 'isomorphic-fetch'
+import React, { Component } from 'react';
 
-import HeroBanner from '../components/heroBanner';
-import Videos from '../components/videos';
- 
+import Layout from '../hoc/Layout';
+import HeroSlider from '../components/Widgets/Slider/slider';
+import VideoList from '../components/Widgets/VideoList/videoList';
 
-const Home = ( {videos } ) => (
-    
-	<div>
-		<HeroBanner />
-		<Videos videos={videos}/>
-	</div>
-)
-
-Home.getInitialProps = async() => {
-
-
-    const res = await fetch(
-		'http://localhost:3005/videos'
-	)
-	const json = await res.json()
-    return { videos: json}   
-
+class Home extends Component {
+    render() {
+        return (
+            <Layout title="Abstrak">
+                <HeroSlider 
+                    type="hero"
+                    start={0}
+                    amount={3}
+                />
+                <VideoList 
+                    type="card"
+                    loadmore={true}
+                    start={0}
+                    amount={3}
+                />
+            </Layout>
+        );
+    }
 }
 
-export default connect()(Home)
+export default Home;

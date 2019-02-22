@@ -1,13 +1,11 @@
 import FontAwesome from 'react-fontawesome';
-import Link from 'next/link';
 
 import SideNav from './SideNav/sideNav';
 
+
 const Header = (props) => {
 
-    
-    const navBars = () => {
-        return (
+    const navBars = () => (
             <div className="bars">
                 <FontAwesome name="bars"
                     onClick={props.onOpenNav}
@@ -19,37 +17,35 @@ const Header = (props) => {
                 />
             </div>
         )
-    }
+    
 
-    const logo = () => {
-        return (            
-            <Link href={`/`}>
-                <a className="logo">
-                    <img alt="abstrak logo" src="/static/images/abstrak_logo.png" />
-                </a>                
-            </Link>
+    const logo = () => (
+            <a href={`/`} className="logo">
+                <img alt="abstrak logo" src="/static/images/abstrak_logo.png" />
+            </a>     
         )
-    }
-
-
-    return (
-        <header className="header">
+    return(
+        
+        <header>
             <SideNav {...props}/>
             <div className="headerOpt">
                 {navBars()}
                 {logo()}
             </div>
+            
 
             <style jsx>{`
-                .header {
-                    position: relative;
+                header {
+                    position: fixed;
                     height: 60px;
                     width: 100%;
-                    padding: 0 20% 0;
+                    top: 0;
+                    padding: 0 5px 0;
                     background: #242424;
                     display: flex;
                     border-bottom: 1px solid #000000;
                     align-items: center;
+                    z-index: 1;
                 }
                 
                 .headerOpt {
@@ -63,11 +59,15 @@ const Header = (props) => {
                 
                 .logo img {
                     width: 35px;
-                }                
+                }
+                @media (min-width: 768px) {   
+                        header {                        
+                        padding: 0 10% 0;
+                    }
+                }   
             `}</style>
-        </header>        
+        </header>
     )
-    
 }
 
 export default Header;
