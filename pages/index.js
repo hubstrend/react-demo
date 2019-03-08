@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
 
 import Layout from '../hoc/Layout';
-import HeroSlider from '../components/Widgets/Slider/slider';
-import VideoList from '../components/Widgets/VideoList/videoList';
+import HeaderHome from '../components/home/HeaderHome';
+import NBvideo from '../components/home/NBvideo';
+import AEbenefits from '../components/home/AEbenefits';
+import BeTheHero from '../components/home/BeTheHero';
+import OfficePlans from '../components/home/OfficePlans';
+import OfficeForm from '../components/home/OfficeForm';
+import Seen from '../components/home/Seen';
 
 class Home extends Component {
     render() {
         return (
-            <Layout title="Abstrak">
-                <HeroSlider 
-                    type="hero"
-                    start={0}
-                    amount={3}
-                />
-                <VideoList 
-                    type="card"
-                    loadmore={true}
-                    start={0}
-                    amount={3}
-                />
+            <Layout title="Home">
+                <HeaderHome />
+                <div className="clearfix"></div>
+                <NBvideo />
+                <div className="clearfix"></div>
+                <AEbenefits />
+                <div className="clearfix"></div>
+                <BeTheHero />
+                <div className="clearfix"></div>
+                <OfficePlans />
+                <OfficeForm />
+                <Seen />
             </Layout>
         );
     }

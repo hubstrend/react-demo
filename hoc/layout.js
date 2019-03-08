@@ -1,197 +1,100 @@
-import React, { Component } from 'react';
 import Head from 'next/head';
 
-import Header from '../components/Header/header';
-import Footer from '../components/footer';
+import NavBar from '../components/Widgets/NavBar';
+import Footer from '../components/Widgets/Footer';
 
-class Layout extends Component {
+const Layout = ({ children, title }) => {
+    return (
+        <div>
+            <Head>
+                <title>{title}</title>
+            </Head>
+            
+            <NavBar />
+            {children}
+            <div className="clearfix"></div>
+            <Footer />
 
-    state = {
-        showNav:false
-    }
-
-    toggleSidenav = (action) => {
-        this.setState({
-            showNav:action
-        })
-    }
-
-    render() {
-
-        const { title } = this.props;
-
-        return (
-            <div className="wrapper-layout">
-                <Head>
-                    <title>{title}</title>
-                </Head>
-
-                <Header 
-                    showNav={this.state.showNav}
-                    onHideNav={()=> this.toggleSidenav(false)}
-                    onOpenNav={()=> this.toggleSidenav(true)}
-                />
-
-                {this.props.children}
-
-                <Footer />
-
-                <style global jsx>{`
-                    html {   
-                        overflow-x: hidden;
-                    }
-                    body {
-                        font-family: 'Roboto', sans-serif;
-                        background: #ececec;
-                        margin: 0;
-                        padding: 0;
-                    }
-                    .wrapper-layout {
-                        margin: 0;
-                        padding: 0;
-                    }
-                    .container {
-                            align-items:center;
-                            align-content: center;
-                            width: 80%;
-                            margin: 20px auto;
-                        }
-                    a {
-                        text-decoration: none;
+            <style global jsx>{`
+                html {
+                    overflow-x: hidden;
+                    margin: 0;
+                    padding: 0;
+                }
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: 'Roboto', sans-serif;
+                    color: #231f1a;
+                    font-size: 1rem;
+                    line-height: 1.625rem;
+                    letter-spacing: .03125rem;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                .container {
+                    width: 100%;
+                    margin: 0 auto;
                     }
 
-                    .clearfix::after {
-                        display: block;
-                        clear: both;
-                        content: "";
+                @media (min-width: 576px) {
+                .container {
+                    max-width: 540px;
+                }
+                }
+
+                @media (min-width: 768px) {
+                .container {
+                    max-width: 720px;
+                }
+                }
+
+                @media (min-width: 992px) {
+                .container {
+                    max-width: 960px;
+                }
+                }
+
+                @media (min-width: 1200px) {
+                .container {
+                    max-width: 1140px;
+                }
+                }
+
+                .container-fluid {
+                    width: 100%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    margin-right: auto;
+                    margin-left: auto;
                     }
 
-                    .secTitle {
-                            text-align: center;
-                            margin-bottom: 30px;
-                        }
-
-                    .mainTitle {
-                        margin-top: 20px;
+                .row {
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    margin-right: -15px;
+                    margin-left: -15px;
                     }
 
-                    .videoWrapper iframe {
-                            width:100%;
-                            min-height:300px;
-                        }
-
-                        .videoWrapper {
-                            margin: 10px;
-                            background: #fff;
-                            margin: 0 5px;                    
-                        }
-
-                        .videoWrapper h2 {
-                            font-size: 20px;
-                            font-weight: 400;
-                            color: #4d4d4d;
-                            margin: 15px 0;
-                            padding: 0 10px;
-                            line-height: 1.4rem;
-                            margin:0;                    
-                        }
-
-                        .videoWrapper p {
-                            color: red;
-                            margin: 0;
-
-                            padding: 5px 10px;
-                            line-height: .9rem;
-                        }
-                        .videoWrapper iframe {
-                            border: 0;
-                            max-width: 100%;
-                            height: auto;
-                        }
-
-
-                        /******** LOAD MORE ********/
-                        .videoList_wrapper {
-                            box-sizing: border-box;
-                            opacity: 0;
-                            transform: translateY(100%);
-                            transition: all .5s ease-in;
-                        }
-
-                        .videoList_wrapper_enter {
-                            opacity: 1;
-                            transform: translateY(0%);
-                        }
-
-
-                        /******** GRID ********/
-
-                        @media (min-width: 320px) {
-                            .colFour {
-                                position: relative;
-                                width: 100%;
-                            }
-
-                            .colFour  {
-                                -ms-flex: 0 0 100%;
-                                flex: 0 0 100%;
-                                max-width: 100%;
-                            }
-                        }
-
-                        @media (min-width: 601px) {   
-                            .colFour {
-                                -ms-flex: 0 0 33.333333%;
-                                flex: 0 0 33.333333%;
-                                max-width: 33.333333%;
-                                float: left;
-                            }
-                        } 
-
-                        @media (min-width: 1920px) {   
-                            .colFour  {
-                                -ms-flex: 0 0 33.333333%;
-                                flex: 0 0 33.333333%;
-                                max-width: 33.333333%;
-                                float: left;
-                            }
-                        } 
-
-                        .clearfix::after {
-                            display: block;
-                            clear: both;
-                            content: "";
-                        }          
-                        .option {
-                            font-weight: 300;
-                            font-size: 12px;
-                            color: #bababa;
-                            padding: 10px;
-                            border-top: 1px solid #404040;
-                        }
-                        
-                        .option a {
-                            color: inherit;
-                            text-decoration: none;
-                        }
-                        
-                        .option span {
-                            color:white;
-                            margin-right: 10px;
-                        }  
-
-
-                        .about h1,
-                        .contact h1 {
-                            text-align: center;
-                            padding-top: 80px;
-                        }
-
-                `}</style>
-            </div>
-                );
-            }
-    
-    }
+                .no-gutters {
+                    margin-right: 0;
+                    margin-left: 0;
+                    }
+                .align-vert {
+                    -ms-flex-line-pack: center !important;
+                    margin: 0 auto;
+                    }
+                .text-center {
+                    text-align: center !important;
+                    }
+                .clearfix {
+                    clear: both;
+                }
+            `}</style>
+        </div>
+    );
+};
 
 export default Layout;

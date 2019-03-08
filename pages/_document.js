@@ -1,30 +1,30 @@
-import Document, { Head, Main, NextScript} from 'next/document';
+import Document, { Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
+
+    
     render() {
         return (
             <html lang="en">
+
                 <Head>
                     <meta charSet="UTF-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                     <meta httpEquiv="X-UA-Compatible" content="ie=edge"/>
 
                     {/* Google Fonts */}
-                    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" />
 
-                    {/* Font Awesome */}
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-                    {/* React Slick */}
-                    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-                    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+                    {/* Font Awesome */}                    
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous"></link>
+                    
+                    
                 </Head>
                 <body>
                     <Main />
                     <NextScript />
-                </body>   
+                </body>
 
-                            
             </html>
         );
     }
