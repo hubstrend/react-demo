@@ -14,37 +14,64 @@ const BeTheHEro = () => (
                     <li className="fas fa-check"><span className="list">No hydrogenated oils or MSG</span></li>
                 </ul>
             </div>
-            <div className="snack-img-container">
-                <div className="med-col">
-                    <div className="product-img">
-                        <div className="nested-img">
-                            <div className="product-img"><img className="" src="/static/images/snack_01.jpg" alt=""/></div>
-                            <div className="product-img"><img className="" src="/static/images/snack_02.jpg" alt=""/></div>
-                        </div>
-                        <div className="nested-img">
-                            <div className="product-img"><img className="" src="/static/images/snack_03.jpg" alt=""/></div>
-                            <div className="product-img"><img className="" src="/static/images/snack_04.jpg" alt=""/></div>
-                        </div>
-                    </div>                    
-                    <div className="product-img">
-                        <div className="nested-img">
-                            <div className="product-img"><img className="" src="/static/images/snack_05.jpg" alt=""/></div>
-                            <div className="product-img"><img className="" src="/static/images/snack_06.jpg" alt=""/></div>
-                        </div>
-                        <div className="nested-img">
-                            <div className="product-img"><img className="" src="/static/images/snack_07.jpg" alt=""/></div>
-                            <div className="product-img"><img className="" src="/static/im.jpg" alt=""/></div>
-                        </div>
+            <div className="product-container">
+                    <div className="product-img product-left"><img className="" src="/static/images/snack_01.jpg" alt=""/></div>
+                    <div className="product-img product-right"><img className="" src="/static/images/snack_02.jpg" alt=""/></div>
+                    <div className="product-img product-left"><img className="" src="/static/images/snack_03.jpg" alt=""/></div>
+                    <div className="product-img product-right"><img className="" src="/static/images/snack_04.jpg" alt=""/></div>
+                    <div className="product-img product-left"><img className="" src="/static/images/snack_05.jpg" alt=""/></div>
+                    <div className="product-img product-right"><img className="" src="/static/images/snack_06.jpg" alt=""/></div>
+                    <div className="product-img product-left"><img className="" src="/static/images/snack_07.jpg" alt=""/></div>
+                    <div className="product-img product-right"><img className="" src="/static/images/snack_08.jpg" alt=""/></div>
+            </div>
+            {/* <div className="snack-img-container">                
+                <div className="product-container">
+                    <div className="nested-img">
+                        <div className="product-img product-left"><img className="" src="/static/images/snack_01.jpg" alt=""/></div>
+                        <div className="product-img product-right"><img className="" src="/static/images/snack_02.jpg" alt=""/></div>
+                    </div>
+                    <div className="nested-img">
+                        <div className="product-img product-left"><img className="" src="/static/images/snack_03.jpg" alt=""/></div>
+                        <div className="product-img product-right"><img className="" src="/static/images/snack_04.jpg" alt=""/></div>
+                    </div>
+                </div>                    
+                <div className="product-container">
+                    <div className="nested-img">
+                        <div className="product-img product-left"><img className="" src="/static/images/snack_05.jpg" alt=""/></div>
+                        <div className="product-img product-right"><img className="" src="/static/images/snack_06.jpg" alt=""/></div>
+                    </div>
+                    <div className="nested-img">
+                        <div className="product-img product-left"><img className="" src="/static/images/snack_07.jpg" alt=""/></div>
+                        <div className="product-img product-right"><img className="" src="/static/images/snack_08.jpg" alt=""/></div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             
             <style jsx>{`
-                .be-the-hero-wrapper {
+                .be-the-hero {
                     display:grid;
                     grid-template-columns: repeat(1,1fr);
                     justify-items: center;
                 }
+                
+
+                .product-container {
+                    display:grid;
+                    grid-template-columns: repeat(2,1fr);
+                    /* grid-template-columns: repeat(auto-fit, minmax(100px,1fr)); */
+                    justify-items:center;                    
+                    padding:0 15px;
+                    margin-top: -50px;
+                    grid-column-gap:7.5px;
+                }
+                /* .product-container {
+                    display:grid;
+                    grid-template-columns: repeat(2,1fr);
+                    justify-items:center;
+                    grid-gap:15px;
+                    padding:0 15px;
+                    margin-top: -50px;
+                } */
 
                 .raise-the-snack {
                     padding: 0 15px;
@@ -68,7 +95,7 @@ const BeTheHEro = () => (
                     background-color: #faf8f5;
                     display:grid;                
                     list-style-position:inside;      
-                    padding: 12px 15px 80px;   
+                    padding: 12px 15px 50px;   
                 }
                 ul li {
                     color: #ef5e12;
@@ -84,10 +111,46 @@ const BeTheHEro = () => (
                     line-height:1.5rem;
                 }
 
-
                 img {
-                    height: 100px;
-                    width: 100px;
+                    height: auto;
+                    width: 100%;
+                }
+
+                @media(min-width:768px) {
+                    img {
+                        height: 100px;
+                        width: 100px;
+                    }
+                    .raise-the-snack-title {
+                        background-color: #faf8f5;
+                    }
+                    .be-the-hero {
+                        margin-top: 80px;
+                        display:grid;
+                        grid-template-columns: repeat(2,1fr);
+                        justify-items: center;
+                        align-items: end;
+                    }
+                    .raise-the-snack-title {
+                        grid-column: 1 / span 2;
+                    }
+                    .raise-the-snack {
+                        padding-right: 200px;
+                    }
+                    .product-container {
+                        width: 430px;
+                        padding:0 15px;
+                        margin-top: -140px;
+                        margin-bottom: 40px;
+                        display:grid;
+                        grid-template-columns: repeat(4,1fr);
+                        /* grid-template-columns: repeat(auto-fit, minmax(100px,1fr)); */
+                        /* grid-column-gap:7.5px;                       */
+                        grid-column: 2/3;
+
+                    }
+
+
                 }
             `}</style>
         </div>
