@@ -10,6 +10,7 @@
 
 
 *** Installation ***
+- install node
 - 'npm init --yes'
 - 'npm i --save next react react-dom'
 - then copy the files inside the folder
