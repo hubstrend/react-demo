@@ -12,5 +12,5 @@
 *** Installation ***
 - install node
 - 'npm init --yes'
-- 'npm i --save next react react-dom'
+- 'npm i --save next react react-dom react-fontawesome react-simple-sidenav'
 - then copy the files inside the folder
