@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 
 const FormGetStarted = () => {
     return (
@@ -25,50 +25,20 @@ const FormGetStarted = () => {
             
             <div className="divider"><hr/>or<hr/></div>
 
-            <div className="schedule-call form-input">
-                <a class="cta-secondary-color" href="https://calendly.com/naturebox/naturebox-demo">Schedule a call to learn more</a>
+            <div className="form-input">
+                <button className="cta"><Link href="https://calendly.com/naturebox/naturebox-demo">Schedule a call to learn more</Link></button>                
             </div>
 
 
 
             <style jsx>{`
-
-                .form-input .schedule-call {
-                    width: 300px;
-                    display:block;
-
-                    border-radius: .1875rem;
-                    font-size: 1rem;
-                    height: 3rem;
-                    line-height: 1;
-                    min-width: 6.25rem;
-                    padding: 1rem 0;
-                    text-align: center;
-                    background-color: #fff;
-                    /* border: 1px solid #ef5e12; */
-                    
-                }
-                .schedule-call a {
-                    color: #ef5e12;
-                    text-decoration: none;
-                }
-
-                .divider hr{
-                    width:128px;
-                    color: #e4e0db;
-                    background-color: #e4e0db;
-                    height:1px;
-                    font-size:0;
-                    border:0;
-                    display: inline-block;
-                    margin: 4px;
-                }
-                .divider {
-                    color: #e4e0db;
-                }
+               
+                
 
 
                 .container-grid {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
                     display: grid;
                     grid-template-columns: 100%;
                 }
@@ -141,6 +111,39 @@ const FormGetStarted = () => {
                     width: 300px;
                     display: inline-block;
                     margin-bottom: 1rem;
+                }
+
+                button {
+                    text-decoration: none;
+                    color: #ef5e12 !important;
+                    margin: 15px auto 30px;
+                }
+                .cta {
+                    background-color: rgba(0,0,0,0);                    
+                    border: none;
+                    border-radius: .1875rem;
+                    color: #fff;
+                    font-size: 1rem;
+                    height: 3rem;
+                    line-height: 1;
+                    min-width: 6.25rem;
+                    padding: 1rem 42px;
+                    text-align: center;
+                    border: 1px solid #ef5e12;                    
+                }
+
+                .divider hr{
+                    width:128px;
+                    color: #e4e0db;
+                    background-color: #e4e0db;
+                    height:1px;
+                    font-size:0;
+                    border:0;
+                    display: inline-block;
+                    margin: 4px;
+                }
+                .divider {
+                    color: #e4e0db;
                 }
 
 
