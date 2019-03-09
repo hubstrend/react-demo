@@ -20,11 +20,54 @@ const FormGetStarted = () => {
             </div>
                         
             <div className="form-input"><select id="hdyhau" name="hdyhau" title="How Did You Hear About Us"><option value="">How did you hear about us?</option><option value="Referral">Referral</option><option value="Email">Email</option><option value="Radio">Radio</option><option value="Friends/Family">Friends/Family</option><option value="Office Ninjas">Office Ninjas</option><option value="Facebook">Facebook</option><option value="Google">Google</option><option value="Podcast">Podcast</option><option value="Product Sample">Product Sample</option><option value="Other">Other</option></select></div>
-            <div className="form-input"><input type="submit" name="submit" id="ss-submit" value="Get a free sample" /></div>           
+            
+            <div className="form-input"><input type="submit" name="submit" id="ss-submit" value="Get a free sample" /></div>
+            
+            <div className="divider"><hr/>or<hr/></div>
+
+            <div className="schedule-call form-input">
+                <a class="cta-secondary-color" href="https://calendly.com/naturebox/naturebox-demo">Schedule a call to learn more</a>
+            </div>
 
 
 
             <style jsx>{`
+
+                .form-input .schedule-call {
+                    width: 300px;
+                    display:block;
+
+                    border-radius: .1875rem;
+                    font-size: 1rem;
+                    height: 3rem;
+                    line-height: 1;
+                    min-width: 6.25rem;
+                    padding: 1rem 0;
+                    text-align: center;
+                    background-color: #fff;
+                    /* border: 1px solid #ef5e12; */
+                    
+                }
+                .schedule-call a {
+                    color: #ef5e12;
+                    text-decoration: none;
+                }
+
+                .divider hr{
+                    width:128px;
+                    color: #e4e0db;
+                    background-color: #e4e0db;
+                    height:1px;
+                    font-size:0;
+                    border:0;
+                    display: inline-block;
+                    margin: 4px;
+                }
+                .divider {
+                    color: #e4e0db;
+                }
+
+
                 .container-grid {
                     display: grid;
                     grid-template-columns: 100%;
