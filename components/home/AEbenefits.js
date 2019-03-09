@@ -117,8 +117,7 @@ const AEbenefits = () => (
                     background-color: #faf8f5;
                 }
                 .unli-happiness-title,
-                .checklists,
-                .catalog {
+                .checklists {
                     margin-left: 30%;
                 }
                 .office-snack-img {

@@ -17,6 +17,7 @@ const HeaderHome = () => {
             <style jsx>{`
                 .hero-wrapper {
                     background-color: #f7f8fb;
+                    margin-top:60px;
                 }
                 .hero-home-container {
                     background: #f7f8fb url(/static/images/hero-home-mobile.jpg);
@@ -67,7 +68,7 @@ const HeaderHome = () => {
                 @media(min-width:768px) {
                     .hero-home-container {
                     background: #f7f8fb url(/static/images/hero-home.jpg);
-                    background-position: right;
+                    background-position: 50% right;
                     background-repeat: no-repeat;
                     background-size: auto 100%;
                     display: inline-block;
@@ -92,7 +93,11 @@ const HeaderHome = () => {
                 }
                 }
 
-              
+                @media(min-width:992px){
+                    .hero-home-container {                    
+                        background-position: right;                    
+                    }
+                }              
 
                 @media(min-width:1920px) {
                     .container {

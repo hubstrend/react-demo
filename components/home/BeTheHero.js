@@ -1,6 +1,6 @@
 
 const BeTheHEro = () => (
-    <div className="be-the-hero-wrapper">
+    <div className="be-the-hero-wrapper container">
         <div className="be-the-hero">
             <div className="raise-the-snack-title">
                 <div className="raise-the-snack">
@@ -147,8 +147,39 @@ const BeTheHEro = () => (
                         /* grid-template-columns: repeat(auto-fit, minmax(100px,1fr)); */
                         /* grid-column-gap:7.5px;                       */
                         grid-column: 2/3;
-
                     }
+                
+                @media(min-width:1440px){
+                    img {
+                        height: 200px;
+                        width: 200px;
+                    }
+
+                    .be-the-hero {
+                        justify-items: start;
+                    }
+
+                    .raise-the-snack-title {
+                        justify-items: start;
+                    }
+
+                    .raise-the-snack-title {
+                        margin-left: 0px;
+                        padding-top: 40px;
+                        padding-left:100px;
+                    }
+                    .raise-the-snack-title .description {
+                        max-width: 400px;
+                    }
+
+                    .product-container {
+                        margin-top: -260px;
+                        margin-bottom: 80px;
+                        margin-right:150px;
+                        grid-column-gap: 22px;
+                        grid-row-gap: 15px;
+                    }
+                }
 
 
                 }

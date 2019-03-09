@@ -19,6 +19,8 @@ const OfficeForm = () => {
                         justify-items:center;
                         width:100%;
                         z-index:999;
+                        margin: 0 auto;
+                        text-align: center;
                     }
                 .office-form-bg {
                     background-image: url(/static/images/office-form-bg.jpg);
@@ -28,6 +30,8 @@ const OfficeForm = () => {
                     display: inline-block;
                     width: 100%;
                     height: 260px;
+                    justify-self: end;
+
                 }
 
                 @media(min-width:768px) {
@@ -36,12 +40,13 @@ const OfficeForm = () => {
                         grid-template-columns: repeat(2,30% 70%);
                     }
                     .office-form {
-                        background-color: red;
+                        display:flex;
                         justify-items:center;
+                        
                     }
                     .office-form-bg {
-                        background-image: url(/static/images/office-form-bg.jpg);
-                        background-position: right top;
+                        /* background-image: url(/static/images/office-form-bg.jpg); */
+                        background-position: left;
                         background-repeat: no-repeat;
                         background-size: 100% auto;
                         display: inline-block;
@@ -53,16 +58,14 @@ const OfficeForm = () => {
                 @media(min-width:1024px) {
                     .container-grid {
                         display: grid;
-                        grid-template-columns: repeat(2,1fr 3fr);
+                        /* grid-template-columns: repeat(2,1fr 3fr); */
                     }
                     .office-form {
-                        background-color: red;
                         justify-items:center;
-                        width:360px;
                     }
                     .office-form-bg {
                         background-image: url(/static/images/office-form-bg.jpg);
-                        background-position: right;
+                        background-position: 80%;
                         background-repeat: no-repeat;
                         background-size: auto 100%;
                         display: inline-block;

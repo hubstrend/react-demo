@@ -7,7 +7,7 @@ const FormGetStarted = () => {
             <div className="form-input"><select id="employee_range" name="employee_range" title="Employee Range"><option value="">Number of employees</option><option value="Less than 20">Less than 20</option><option value="20-100">20-100</option><option value="100-200">100-200</option><option value="200-500">200-500</option><option value="More than 500">More than 500</option></select></div>
 
             <div className="nested-grid">
-                <div className="form-input"><input className="small-6 columns firstname" id="first_name" maxLength="40" name="first_name" size="20" type="text" placeholder="First name" required="" /></div>
+                <div className="form-input margin-r"><input className="small-6 columns firstname" id="first_name" maxLength="40" name="first_name" size="20" type="text" placeholder="First name" required="" /></div>
                 <div className="form-input"><input className="small-6 columns lastname" id="last_name" maxLength="80" name="last_name" size="20" type="text" placeholder="Last name" required="" /></div>
             </div>            
 
@@ -15,7 +15,7 @@ const FormGetStarted = () => {
             <div className="form-input"><input id="company" maxLength="40" name="company" size="20" type="text" placeholder="Company name" required="" /></div>
 
             <div className="nested-grid">
-                <div className="form-input"><input className="small-9 columns phone" id="phone" maxLength="12" name="phone" size="20" type="text" placeholder="Phone number" required="" /></div>
+                <div className="form-input margin-r"><input className="small-9 columns phone" id="phone" maxLength="12" name="phone" size="20" type="text" placeholder="Phone number" required="" /></div>
                 <div className="form-input"><input className="small-3 columns location-state" id="location_state" maxLength="80" name="location_state" size="20" type="text" placeholder="State" required="" /></div>
             </div>
                         
@@ -26,35 +26,96 @@ const FormGetStarted = () => {
 
             <style jsx>{`
                 .container-grid {
-                    background-color:#fff;
                     display: grid;
                     grid-template-columns: 100%;
-                    
                 }
 
                 .nested-grid {
-                    display:grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-column-gap: 1rem;
+                    display:flex;
+                    grid-template-columns: repeat(3, 40% 40%);
+                    justify-content: center ;
+                }
+
+                .margin-r {
+                    margin-right: .5rem;
                 }
 
                 .container-grid > div {
                     margin: .5rem;
                 }
 
-                .container-grid input,
+
+                .form-input select {
+                    background: url(/static/images/carrot-down.svg) no-repeat 90% 50%;
+                    background-size: 15px;
+                    height:49px;
+                    padding-left: .625rem;
+                    border: 1px solid #b7b4b0;
+                    border-radius: 3px;
+                    background-color: #fff;
+                    color: #231f1a;
+                    font-size: 1rem;
+                    letter-spacing: .03125rem;
+                    appearance: none;
+
+                    width:300px;
+                    display: inline-block;
+                    margin-bottom:1rem;                    
+                }
+
+                .form-input input:not([type=checkbox]){
+                    background-color: #fff;
+                    border: 1px solid #c0bcbc;
+                    border-radius: 3px;
+                    color:#231f1a;
+                    font-size:1rem;
+                    letter-spacing: .03125rem;
+                    height: 48px;
+                    padding: .25rem .625rem 0 .625rem;
+
+                    width:280px;
+                    display: inline-block;
+                    margin-bottom:1rem;
+                }
+
+                .nested-grid input:not([type=checkbox]){
+                    width: 134px;
+                    padding-right:0;
+                }
+
+                .form-input input[type=submit] {
+                    background-color: #ef5e12;
+                    border: none;
+                    border-radius: .1875rem;
+                    color: #fff;
+                    font-size: 1rem;
+                    height: 3rem;
+                    line-height: 1;
+                    min-width: 6.25rem;
+                    padding: 1rem;
+                    text-align: center;
+
+                    width: 300px;
+                    display: inline-block;
+                    margin-bottom: 1rem;
+                }
+
+
+
+
+
+                /* .container-grid input,
                 .container-grid select
                 {
                     background-color:#fff;
                     color: #231f1a;
                     font-size: 1rem;
                     letter-spacing: .03125rem;
-                    width: 100%;
                     height: 48px;
                     padding: .25rem .625rem 0 .625rem;
                     border: 1px solid #c0bcbc;
                     border-radius: 3px;
-                }
+                } */
 
 
 

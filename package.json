@@ -15,6 +15,8 @@
   "dependencies": {
     "next": "^8.0.3",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-fontawesome": "^1.6.1",
+    "react-simple-sidenav": "^1.0.1"
   }
 }

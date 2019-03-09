@@ -130,7 +130,7 @@ const OfficePlans = () => {
                 .container-grid .addon-plans {
                     display:grid;
                     grid-template-columns: repeat(2,1fr);
-                    grid-gap: 1.5rem;
+                    grid-gap: .5rem;
                     margin-bottom: 30px;
                 }
                 .plans  {
@@ -140,7 +140,7 @@ const OfficePlans = () => {
                     font-weight: 500;
                     line-height: 1.625rem;
                     letter-spacing: .0375rem;
-                    width: 200px;
+                    width: 120px;
                     padding-top: 16px;
                     padding-bottom: 16px;
                 }
@@ -170,7 +170,7 @@ const OfficePlans = () => {
                 .nested-bulk-order {
                     display:grid;
                     justify-items:center;
-                    width:470px;
+                    width:300px;
                     text-align:center;
                     border-top:1px solid #e4e0db;
                     margin: 36px auto 60px;
@@ -181,6 +181,20 @@ const OfficePlans = () => {
                 }
                 .nested-bulk-order p{
                     margin:0 auto;
+                }
+
+                @media(min-width:768px){
+
+                    .container-grid .addon-plans {
+                        grid-gap: 1.5rem;
+                    }
+                    .plans  {
+                        width: 200px;
+                    }
+
+                    .nested-bulk-order {
+                        width:470px;
+                    }
                 }
             
             `}</style>
