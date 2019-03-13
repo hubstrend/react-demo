@@ -14,3 +14,7 @@
 - 'npm init --yes'
 - 'npm i --save next react react-dom react-fontawesome react-simple-sidenav'
 - then copy the files inside the folder
+
+
+*** Deployed ***
+https://naturebox-next-ee0a8deyq.now.sh/

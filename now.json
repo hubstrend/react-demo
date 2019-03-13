@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "name": "naturebox-next",
+    "builds": [
+        {"src": "package.json", "use": "@now/static-build"}
+    ]
+}
