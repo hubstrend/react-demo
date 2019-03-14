@@ -1,4 +1,4 @@
-*** Deployed ***
+DEMO: 
 https://naturebox-next-7g16881vv.now.sh
 
 *** Instructions ***
