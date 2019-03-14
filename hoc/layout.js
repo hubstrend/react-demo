@@ -58,6 +58,36 @@ class Layout extends Component {
                         margin: 0 auto;
                         }
 
+
+                    .form-input span Link {
+                        text-decoration: none !important;
+                        color: #ef5e12 !important;
+                        margin: 15px auto 30px;
+                    }                    
+                    .form-input span a {
+                        text-decoration: none !important;
+                        color: #ef5e12 !important;
+                    }
+                    .form-input .cta {
+                        background-color: rgba(0,0,0,0);                    
+                        border: none;
+                        border-radius: .1875rem;
+                        color: #ef5e12 !important;
+                        text-decoration: none !important;
+                        font-size: 1rem;
+                        height: 3rem;
+                        line-height: 1;
+                        min-width: 6.25rem;
+                        padding: 1rem 38px;
+                        text-align: center;
+                        border: 1px solid #ef5e12;                    
+                    }
+                    .form-input a:-webkit-any-link {
+                        text-decoration: none !important;
+                        color: #ef5e12 !important;
+                    }
+
+
                     @media (min-width: 576px) {
                     .container {
                         max-width: 540px;

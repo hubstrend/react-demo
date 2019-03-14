@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const FormGetStarted = () => {
     return (
-        <div className="container-grid">
+        <div className="container-grid" id="formGetStarted">
             <div><h1>Get started today!</h1></div>
             <div className="form-input"><select id="employee_range" name="employee_range" title="Employee Range"><option value="">Number of employees</option><option value="Less than 20">Less than 20</option><option value="20-100">20-100</option><option value="100-200">100-200</option><option value="200-500">200-500</option><option value="More than 500">More than 500</option></select></div>
 
@@ -26,7 +26,7 @@ const FormGetStarted = () => {
             <div className="divider"><hr/>or<hr/></div>
 
             <div className="form-input">
-                <button className="cta"><Link href="https://calendly.com/naturebox/naturebox-demo">Schedule a call to learn more</Link></button>                
+                <span className="cta"><Link href="https://calendly.com/naturebox/naturebox-demo"><a>Schedule a call to learn more</a></Link></span>                
             </div>
 
 
@@ -36,9 +36,9 @@ const FormGetStarted = () => {
                 
 
 
-                .container-grid {
+               #formGetStarted {
                     margin-top: 30px;
-                    margin-bottom: 30px;
+                    margin-bottom: 50px;
                     display: grid;
                     grid-template-columns: 100%;
                 }
@@ -113,16 +113,21 @@ const FormGetStarted = () => {
                     margin-bottom: 1rem;
                 }
 
-                button {
-                    text-decoration: none;
+                /* .form-input span Link {
+                    text-decoration: none !important;
                     color: #ef5e12 !important;
                     margin: 15px auto 30px;
                 }
-                .cta {
+                .form-input span a {
+                    text-decoration: none !important;
+                    color: #ef5e12 !important;
+                }
+                .form-input .cta {
                     background-color: rgba(0,0,0,0);                    
                     border: none;
                     border-radius: .1875rem;
-                    color: #fff;
+                    color: #ef5e12 !important;
+                    text-decoration: none !important;
                     font-size: 1rem;
                     height: 3rem;
                     line-height: 1;
@@ -130,9 +135,9 @@ const FormGetStarted = () => {
                     padding: 1rem 42px;
                     text-align: center;
                     border: 1px solid #ef5e12;                    
-                }
+                } */
 
-                .divider hr{
+                #formGetStarted .divider hr{
                     width:128px;
                     color: #e4e0db;
                     background-color: #e4e0db;
@@ -142,8 +147,9 @@ const FormGetStarted = () => {
                     display: inline-block;
                     margin: 4px;
                 }
-                .divider {
+                #formGetStarted .divider {
                     color: #e4e0db;
+                    margin-bottom: 35px;
                 }
 
 
