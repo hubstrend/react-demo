@@ -17,17 +17,15 @@
 // navSlide();
 
 
-$(document).ready(function() {
-	$(document).on('click', function(e) {
-		
-		if ( $(e.target).closest('.container-nav').length > 0 ) {
-			  $('body').toggleClass('no-scroll');
-        $('.side-nav').toggleClass('open');
-        $('.side-nav-container').toggleClass('visible');
-		} else if ( $(e.target).closest('.side-nav-container').length === 0 && $('.side-nav-container').hasClass('visible') ) {
-	 		  $('body').removeClass('no-scroll');
-        $('.burger').removeClass("open");
-        $('.side-nav-container').removeClass("visible");
-		}
-	});
-});
+// function toggleOverlay(){
+// 	var overlay = document.getElementById('overlay');
+// 	var specialBox = document.getElementById('specialBox');
+// 	overlay.style.opacity = .8;
+// 	if(overlay.style.display == "block"){
+// 		overlay.style.display = "none";
+// 		specialBox.style.display = "none";
+// 	} else {
+// 		overlay.style.display = "block";
+// 		specialBox.style.display = "block";
+// 	}
+// }
